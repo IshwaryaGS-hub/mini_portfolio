@@ -1,0 +1,143 @@
+:root {
+    --accent: #0d6efd;
+    --accent-light: #e8f1ff;
+    --dark: #0b1220;
+    --text-muted: #6c757d;
+    --radius: 14px;
+}
+
+/* GLOBAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f3f6fc;
+    color: var(--dark);
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+/* NAVBAR */
+.navbar {
+    padding: 14px 0 !important;
+    transition: all 0.3s ease;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: #333 !important;
+}
+
+.nav-link:hover {
+    color: var(--accent) !important;
+}
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(100deg, rgba(13,110,253,0.95), rgba(102,16,242,0.9));
+    padding: 130px 0 110px 0;
+    color: #fff;
+}
+
+.hero h1 {
+    letter-spacing: -0.5px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.hero .btn {
+    padding: 12px 26px;
+    border-radius: var(--radius);
+}
+
+.hero img, .profile-mockup {
+    transition: transform 0.4s ease;
+}
+
+.profile-mockup:hover {
+    transform: scale(1.04);
+}
+
+/* ABOUT */
+.contact-card {
+    background: #ffffff;
+    border-radius: var(--radius);
+    padding: 22px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-4px);
+}
+
+/* SKILL BADGES */
+.badge-skill {
+    display: inline-block;
+    margin: 6px;
+    padding: 8px 16px;
+    border-radius: 100px;
+    background: var(--accent-light);
+    color: var(--accent);
+    font-weight: 600;
+    box-shadow: 0 6px 18px rgba(13, 110, 253, 0.15);
+    transition: all 0.25s ease;
+}
+
+.badge-skill:hover {
+    transform: translateY(-3px);
+    background: var(--accent);
+    color: white;
+}
+
+/* PROJECTS */
+.project-card {
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+}
+
+.project-card .btn {
+    border-radius: var(--radius);
+}
+
+/* CONTACT */
+#contactForm .form-control {
+    border-radius: var(--radius);
+    padding: 12px;
+}
+
+#contactForm .btn {
+    padding: 12px;
+    border-radius: var(--radius);
+}
+
+/* FOOTER */
+footer {
+    background: var(--dark);
+    color: white;
+    padding: 30px 0;
+    margin-top: 40px;
+    font-size: 0.95rem;
+}
+
+/* RESPONSIVE */
+@media (min-width: 992px) {
+    .hero {
+        padding: 150px 0;
+    }
+}
